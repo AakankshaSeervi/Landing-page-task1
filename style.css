@@ -1,0 +1,132 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Main section styling */
+.main-section {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* Add these styles to your existing CSS */
+
+/* Image column styling */
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: Add a slight border-radius for a smoother look */
+}
+
+/* Adjust the layout to ensure the columns stay balanced */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    
+    .image-column {
+        margin: 20px 0; /* Add space between stacked items on smaller screens */
+    }
+}
+.column {
+    flex: 1;
+    background-color: #eaeaea;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.column h2 {
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #88d4f1;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+}
